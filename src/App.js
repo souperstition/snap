@@ -2,8 +2,8 @@ import './scss/index.scss';
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">hi</header>
+		<div>
+			<header>hi</header>
 		</div>
 	);
 }
