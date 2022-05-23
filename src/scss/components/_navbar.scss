@@ -1,0 +1,32 @@
+@use '../variables/' as *;
+@use '../mixins/' as *;
+
+nav {
+	display: flex;
+	align-items: center;
+	padding: 1.5rem 2rem;
+
+	img {
+		margin-right: 3rem;
+	}
+
+	ul {
+		@include ul;
+	}
+
+	.users {
+		margin-left: auto;
+
+		button {
+			padding: 0.6rem 1rem;
+			margin: 0 0.5rem;
+			background-color: transparent;
+			@include borders(2px, transparent, 0.5rem);
+			@include weight700(14px, $gray);
+		}
+
+		.register {
+			@include borders(2px, $gray, 0.5rem);
+		}
+	}
+}

@@ -1,0 +1,23 @@
+@use '../variables/' as *;
+
+@mixin weight700($size, $color) {
+	font-size: $size;
+	font-weight: 700;
+	color: $color;
+}
+
+@mixin weight500($size, $color) {
+	font-size: $size;
+	font-weight: 500;
+	color: $color;
+}
+
+@mixin ul {
+	list-style-type: none;
+	display: flex;
+	gap: 2rem;
+
+	li {
+		@include weight700(14px, $gray);
+	}
+}
