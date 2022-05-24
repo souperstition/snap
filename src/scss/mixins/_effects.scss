@@ -3,3 +3,7 @@
 @mixin transition($duration: 500ms, $type: all) {
 	transition: $type $duration;
 }
+
+@mixin shadow {
+	box-shadow: 0.25rem 0.25rem 3rem rgba(0, 0, 0, 0.1);
+}

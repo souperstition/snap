@@ -1,0 +1,43 @@
+@use '../variables/' as *;
+@use '../mixins/' as *;
+
+.dropdown {
+	@include borders(2px, 0.5rem);
+	@include shadow;
+	@include flex(column, space-between, flex-start, 0.35rem);
+	position: absolute;
+	top: 2rem;
+	right: 0;
+	width: calc(100% + 3.5rem);
+	padding: 1rem;
+	background-color: $offwhite;
+}
+
+.dropdown-features {
+	svg {
+		display: inline;
+		flex: 1;
+	}
+
+	li:before {
+		margin-right: 1rem;
+	}
+
+	li:nth-child(1):before {
+		content: url('../../images/icon-todo.svg');
+	}
+	li:nth-child(2):before {
+		content: url('../../images/icon-calendar.svg');
+	}
+	li:nth-child(3):before {
+		content: url('../../images/icon-reminders.svg');
+	}
+	li:nth-child(4):before {
+		content: url('../../images/icon-planning.svg');
+	}
+}
+
+.dropdown-company {
+	width: calc(100% + 1rem);
+	padding: 1rem;
+}
