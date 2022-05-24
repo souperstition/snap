@@ -1,0 +1,35 @@
+@use '../variables' as *;
+
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0, ) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $gap;
+}
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == 1100px {
+		@media only screen and (max-width: 1100px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 900px {
+		@media only screen and (max-width: 900px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 750px {
+		@media only screen and (max-width: 750px) {
+			@content;
+		}
+	}
+
+	@if $breakpoint == 500px {
+		@media only screen and (max-width: 500px) {
+			@content;
+		}
+	}
+}

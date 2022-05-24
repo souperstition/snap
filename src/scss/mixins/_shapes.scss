@@ -1,6 +1,13 @@
 @use '../variables/' as *;
 
-@mixin borders($size, $color, $radius) {
+@mixin borders($color, $radius: 0.5rem, $size: 2px) {
 	border: $size solid $color;
 	border-radius: $radius;
+}
+
+@mixin button($background, $border) {
+	border: 2px solid $border;
+	border-radius: 0.5rem;
+	background-color: $background;
+	padding: 0.6rem 1rem;
 }

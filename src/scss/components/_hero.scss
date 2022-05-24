@@ -1,0 +1,56 @@
+@use '../variables/' as *;
+@use '../mixins/' as *;
+
+main {
+	@include flex;
+	padding: 0 5vw;
+	> * {
+		width: 50%;
+		margin: 5vh 3vw 0;
+	}
+
+	@include respond(1100px) {
+		padding: 0 2vw;
+
+		> * {
+			width: 50%;
+			margin: 5vh 2vw 0;
+		}
+
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+
+	@include respond(900px) {
+		h1 {
+			font-size: 3rem;
+		}
+	}
+
+	h1 {
+		@include weight700(calc(3rem + 0.75vw), $offblack);
+		line-height: 1em;
+	}
+
+	section {
+		> * {
+			margin: 1.5rem 0;
+		}
+
+		p {
+			@include weight500(1rem, $gray);
+		}
+
+		button {
+			@include button($offblack, $offblack);
+			@include weight700(1rem, $offwhite);
+		}
+	}
+
+	img {
+		max-height: 70vh;
+		width: auto;
+		max-width: 40vw;
+	}
+}
