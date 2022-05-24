@@ -3,6 +3,7 @@
 
 nav {
 	@include flex;
+	justify-self: flex-start;
 	padding: 1.5rem 2rem;
 
 	img {

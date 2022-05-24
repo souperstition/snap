@@ -1,4 +1,5 @@
 @use '../variables/' as *;
+@use '../mixins/' as *;
 
 *,
 *::before,
@@ -39,4 +40,9 @@ h4,
 h5,
 h6 {
 	overflow-wrap: break-word;
+}
+
+.container {
+	@include flex(column, stretch, stretch, 5vh);
+	height: 100vh;
 }

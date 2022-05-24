@@ -1,10 +1,10 @@
 import Clients from './Clients';
-import hero from '../images/image-hero-desktop.png';
+import heroDesktop from '../images/image-hero-desktop.png';
 
 const Hero = () => {
 	return (
 		<main>
-			<section>
+			<section className="hero-content">
 				<h1>
 					Make<br /> remote work
 				</h1>
@@ -18,7 +18,7 @@ const Hero = () => {
 
 				<Clients />
 			</section>
-			<img src={hero} alt="hero" />
+			<img className="hero-desktop" src={heroDesktop} alt="hero" />
 		</main>
 	);
 };
