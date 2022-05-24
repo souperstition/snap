@@ -1,0 +1,5 @@
+@use '../variables/' as *;
+
+@mixin transition($duration: 500ms, $type: all) {
+	transition: $type $duration;
+}

@@ -1,13 +1,22 @@
 @use '../variables/' as *;
+@use './effects' as *;
 
-@mixin borders($color, $radius: 0.5rem, $size: 2px) {
+@mixin borders($color, $radius: 0.8rem, $size: 2px) {
 	border: $size solid $color;
 	border-radius: $radius;
 }
 
 @mixin button($background, $border) {
 	border: 2px solid $border;
-	border-radius: 0.5rem;
+	border-radius: 0.8rem;
 	background-color: $background;
-	padding: 0.6rem 1rem;
+	padding: 0.6rem 1.5rem;
+	@include transition(750ms);
+}
+
+@mixin hover($background, $border, $text) {
+	background-color: $background;
+	border-color: $border;
+	color: $text;
+	cursor: pointer;
 }

@@ -1,4 +1,7 @@
 @use '../variables/' as *;
+@use './shapes' as *;
+@use './effects' as *;
+@use './layouts' as *;
 
 @mixin weight700($size, $color) {
 	font-size: $size;
@@ -14,10 +17,14 @@
 
 @mixin ul {
 	list-style-type: none;
-	display: flex;
-	gap: 2rem;
+	@include flex(row, center, center, 2rem);
 
 	li {
 		@include weight700(14px, $gray);
+		@include transition;
+	}
+
+	li:hover {
+		@include hover(transparent, transparent, $offblack);
 	}
 }

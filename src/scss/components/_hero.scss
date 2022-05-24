@@ -7,26 +7,30 @@ main {
 	padding: 0 5vw;
 	> * {
 		width: 50%;
-		margin: 0 3vw;
 	}
 
 	h1 {
-		@include weight700(calc(3rem + 0.75vw), $offblack);
+		@include weight700(calc(4rem + 0.5vw), $offblack);
 		line-height: 1em;
 	}
 
 	.hero-content {
-		@include flex(column, center, flex-start, 2.5rem);
-		padding-top: 2rem;
+		@include flex(column, center, flex-start, 3rem);
+		padding-top: 3.5rem;
 		height: 100%;
 
 		p {
 			@include weight500(1rem, $gray);
+			width: 75%;
 		}
 
 		button {
 			@include button($offblack, $offblack);
 			@include weight700(1rem, $offwhite);
+			padding: 0.85rem 1.5rem;
+		}
+		button:hover {
+			@include hover($offwhite, $offblack, $offblack);
 		}
 	}
 
@@ -34,6 +38,7 @@ main {
 		max-height: 70vh;
 		width: auto;
 		max-width: 40vw;
+		margin-left: 2vw;
 	}
 
 	@include respond(large) {

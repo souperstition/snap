@@ -2,11 +2,23 @@
 @use '../mixins/' as *;
 
 .clients {
-	@include flex(row, space-between, center, 0);
+	@include flex(row, space-between, center, 2rem);
 	margin-top: auto;
 	width: 100%;
 
-	img {
-		width: calc(100vw / 12);
+	.clients-svg {
+		width: calc(100vw / 10);
+
+		path {
+			@include transition;
+		}
+	}
+
+	.clients-svg:hover {
+		cursor: pointer;
+
+		path {
+			fill: $offblack;
+		}
 	}
 }

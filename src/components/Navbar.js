@@ -1,9 +1,9 @@
-import logo from '../images/logo.svg';
+import { ReactComponent as Logo } from '../images/logo.svg';
 
 const Navbar = () => {
 	return (
 		<nav>
-			<img src={logo} alt="logo" />
+			<Logo className="logo" />
 			<ul>
 				<li>Features</li>
 				<li>Company</li>

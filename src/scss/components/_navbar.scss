@@ -2,12 +2,24 @@
 @use '../mixins/' as *;
 
 nav {
-	@include flex;
-	justify-self: flex-start;
+	@include flex(row, center, baseline, 0);
 	padding: 1.5rem 2rem;
 
-	img {
-		margin-right: 3rem;
+	.logo {
+		margin-right: 2rem;
+		align-self: center;
+
+		path {
+			@include transition;
+		}
+	}
+
+	.logo:hover {
+		cursor: pointer;
+
+		path {
+			fill: $gray;
+		}
 	}
 
 	ul {
@@ -20,10 +32,17 @@ nav {
 		button {
 			@include button(transparent, transparent);
 			@include weight700(14px, $gray);
+			margin: 0 0.25rem;
+		}
+		button:hover {
+			@include hover($gray, transparent, $offwhite);
 		}
 
 		.register {
 			@include borders($gray);
+		}
+		.register:hover {
+			@include hover($offblack, $offblack, $offwhite);
 		}
 	}
 }

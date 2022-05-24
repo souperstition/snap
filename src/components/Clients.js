@@ -1,15 +1,15 @@
-import databiz from '../images/client-databiz.svg';
-import audiophile from '../images/client-audiophile.svg';
-import meet from '../images/client-meet.svg';
-import maker from '../images/client-maker.svg';
+import { ReactComponent as Databiz } from '../images/client-databiz.svg';
+import { ReactComponent as Audiophile } from '../images/client-audiophile.svg';
+import { ReactComponent as Meet } from '../images/client-meet.svg';
+import { ReactComponent as Maker } from '../images/client-maker.svg';
 
 const Clients = () => {
 	return (
 		<section className="clients">
-			<img src={databiz} alt="databiz" />
-			<img src={audiophile} alt="databiz" />
-			<img src={meet} alt="databiz" />
-			<img src={maker} alt="databiz" />
+			<Databiz className="clients-svg" />
+			<Audiophile className="clients-svg" />
+			<Meet className="clients-svg" />
+			<Maker className="clients-svg" />
 		</section>
 	);
 };
