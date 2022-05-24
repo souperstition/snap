@@ -2,13 +2,13 @@
 @use '../mixins/' as *;
 
 .dropdown {
-	@include borders(2px, 0.5rem);
+	@include borders(transparent);
 	@include shadow;
 	@include flex(column, space-between, flex-start, 0.35rem);
 	position: absolute;
 	top: 2rem;
 	right: 0;
-	width: calc(100% + 3.5rem);
+	width: calc(100% + 3.75rem);
 	padding: 1rem;
 	background-color: $offwhite;
 }
