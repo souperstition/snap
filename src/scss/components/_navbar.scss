@@ -31,18 +31,18 @@ nav {
 
 		button {
 			@include button(transparent, transparent);
-			@include weight700(14px, $gray);
+			@include weight700(14px, $ltgray);
 			margin: 0 0.25rem;
 		}
 		button:hover {
-			@include hover($gray, transparent, $offwhite);
+			@include hover(transparent, transparent, $offblack);
 		}
 
 		.register {
-			@include borders($gray);
+			@include borders($ltgray);
 		}
 		.register:hover {
-			@include hover($offblack, $offblack, $offwhite);
+			@include hover(transparent, $offblack, $offblack);
 		}
 	}
 }

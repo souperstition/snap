@@ -20,7 +20,7 @@
 	@include flex(row, center, center, 2rem);
 
 	li {
-		@include weight700(14px, $gray);
+		@include weight700(14px, $ltgray);
 		@include transition;
 	}
 

@@ -4,7 +4,7 @@
 .clients {
 	@include flex(row, space-between, center, 2rem);
 	margin-top: auto;
-	width: 100%;
+	width: 85%;
 
 	.clients-svg {
 		width: calc(100vw / 10);
