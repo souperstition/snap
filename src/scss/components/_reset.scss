@@ -22,7 +22,6 @@ html {
 	line-height: calc(1em + 0.5rem);
 	font-size: 18px;
 	width: 100vw;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -61,6 +60,8 @@ h6 {
 }
 
 .container {
-	@include flex(column, stretch, stretch, 1rem);
-	height: 100vh;
+	@include flex(column, stretch, stretch, 0);
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
 }

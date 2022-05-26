@@ -7,7 +7,7 @@ const Hero = () => {
 	return (
 		<main>
 			<section className="hero-content">
-				<Media queries={{ mobile: '(max-width: 650px)' }}>
+				<Media queries={{ mobile: '(max-width: 750px)' }}>
 					{matches => <h1>Make{matches.mobile ? ' ' : <br />}remote work</h1>}
 				</Media>
 
@@ -22,7 +22,7 @@ const Hero = () => {
 			</section>
 			<Media
 				queries={{
-					mobile: '(max-width: 650px)'
+					mobile: '(max-width: 750px)'
 				}}
 			>
 				{matches => <img className="hero-image" src={matches.mobile ? heroMobile : heroDesktop} alt="hero" />}

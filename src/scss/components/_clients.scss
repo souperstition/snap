@@ -21,9 +21,17 @@
 			fill: $offblack;
 		}
 	}
+	@include respond(small) {
+		gap: 1rem;
+		width: 90%;
+		.clients-svg {
+			width: calc(100vw / 8);
+		}
+	}
 
 	@include respond(x-small) {
 		margin: auto;
+		gap: 2rem;
 		padding-bottom: 1.5rem;
 		.clients-svg {
 			width: calc(100vw / 4);

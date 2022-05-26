@@ -56,12 +56,12 @@ const Navbar = () => {
 	return (
 		<nav>
 			<Logo className="logo" />
-			<Media queries={{ mobile: '(max-width: 650px)' }}>
+			<Media queries={{ mobile: '(max-width: 750px)' }}>
 				{matches =>
 					matches.mobile &&
 					(mobileNav ? <MenuClose onClick={handleMobileClick} /> : <MenuOpen onClick={handleMobileClick} />)}
 			</Media>
-			<Media queries={{ mobile: '(max-width: 650px)' }}>
+			<Media queries={{ mobile: '(max-width: 750px)' }}>
 				{matches => (
 					<section className={matches.mobile ? menuToggle : 'nav-links'}>
 						<ul>
