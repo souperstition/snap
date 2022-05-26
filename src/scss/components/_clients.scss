@@ -24,7 +24,7 @@
 
 	@include respond(x-small) {
 		margin: auto;
-		padding-bottom: 2rem;
+		padding-bottom: 1.5rem;
 		.clients-svg {
 			width: calc(100vw / 4);
 		}

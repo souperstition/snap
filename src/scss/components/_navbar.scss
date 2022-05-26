@@ -2,9 +2,12 @@
 @use '../mixins/' as *;
 
 nav {
-	@include flex(row, center, baseline, 0);
+	@include flex(row, flex-start, baseline, 0);
 	padding: 1.5rem 2rem;
-
+	.nav-links {
+		@include flex(row, space-between, baseline);
+		flex: 1;
+	}
 	.logo {
 		margin-right: 2rem;
 		margin-bottom: 0.25rem;
@@ -64,6 +67,20 @@ nav {
 		}
 	}
 
+	.menu {
+		path {
+			@include transition;
+		}
+	}
+
+	.menu:hover {
+		cursor: pointer;
+
+		path {
+			fill: $gray;
+		}
+	}
+
 	@include respond(medium) {
 		padding: 1rem;
 		.logo {
@@ -105,9 +122,54 @@ nav {
 	@include respond(x-small) {
 		justify-content: space-between;
 
-		ul,
-		.users {
-			display: none;
+		.menu {
+			position: relative;
+			z-index: 5;
+		}
+		.nav-links {
+			@include flex(column, flex-start, flex-start, 1rem);
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 100vh;
+			padding: 3rem 1rem 0;
+			width: 50vw;
+			background-color: $offwhite;
+			z-index: 1;
+			box-shadow: -3rem 0 15rem 30rem rgba(0, 0, 0, 0.5);
+			transition: transform 500ms, box-shadow 300ms, visibility 500ms;
+			transform: translateX(0);
+			transform-origin: right;
+			visibility: visible;
+
+			ul {
+				@include flex(column, flex-end, flex-start, 1rem);
+				li {
+					height: auto;
+					font-size: 0.9rem;
+				}
+			}
+
+			.users {
+				display: grid;
+				width: 100%;
+			}
+
+			.dropdown {
+				position: relative;
+				top: 0;
+				width: auto;
+				display: block;
+				background-color: transparent;
+				box-shadow: 0.25rem 0.25rem 3rem rgba(0, 0, 0, 0);
+			}
+		}
+
+		.hidden {
+			transform: translateX(100%);
+			transform-origin: right;
+			box-shadow: none;
+			visibility: hidden;
 		}
 	}
 }

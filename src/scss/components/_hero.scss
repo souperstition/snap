@@ -65,7 +65,8 @@ main {
 		padding: 0;
 
 		.hero-image {
-			max-height: unset;
+			max-height: 45vh;
+			object-fit: cover;
 			max-width: unset;
 			width: 100%;
 			margin: 0;
@@ -74,9 +75,11 @@ main {
 		.hero-content {
 			order: 2;
 			text-align: center;
+			gap: 1.75rem;
 			p,
 			h1 {
 				width: 100%;
+				padding: 0 0.5rem;
 			}
 			button {
 				margin: 0 auto;
