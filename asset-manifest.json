@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/snap/static/css/main.c1915e71.css",
-    "main.js": "/snap/static/js/main.921b7004.js",
+    "main.css": "/snap/static/css/main.5f308dfa.css",
+    "main.js": "/snap/static/js/main.0a134430.js",
     "static/media/image-hero-desktop.png": "/snap/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
+    "static/media/image-hero-mobile.png": "/snap/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
     "static/media/client-databiz.svg": "/snap/static/media/client-databiz.078a69f4faba99c629d7d1a3e4cf3885.svg",
     "static/media/logo.svg": "/snap/static/media/logo.1c174ccea84ec59ff8801662c788919d.svg",
     "static/media/client-maker.svg": "/snap/static/media/client-maker.5931c99ed2ea94aa69ddeea61a108ced.svg",
@@ -13,13 +14,15 @@
     "static/media/icon-planning.svg": "/snap/static/media/icon-planning.7264cc64a81fa348da1d.svg",
     "static/media/icon-calendar.svg": "/snap/static/media/icon-calendar.238c231afbc7d43b81c6.svg",
     "static/media/icon-todo.svg": "/snap/static/media/icon-todo.9026f6b4fc98e3b42233.svg",
+    "static/media/icon-close-menu.svg": "/snap/static/media/icon-close-menu.91e2611a59b232ef4f48bec62ef49628.svg",
+    "static/media/icon-menu.svg": "/snap/static/media/icon-menu.0bf7648057d15f6bed27c8623b233d04.svg",
     "static/media/icon-arrow-down.svg": "/snap/static/media/icon-arrow-down.b7cb4426abd685334d90eba20ec50006.svg",
     "static/media/icon-arrow-up.svg": "/snap/static/media/icon-arrow-up.9d6e23960e7e5008d00839f62159a604.svg",
-    "main.c1915e71.css.map": "/snap/static/css/main.c1915e71.css.map",
-    "main.921b7004.js.map": "/snap/static/js/main.921b7004.js.map"
+    "main.5f308dfa.css.map": "/snap/static/css/main.5f308dfa.css.map",
+    "main.0a134430.js.map": "/snap/static/js/main.0a134430.js.map"
   },
   "entrypoints": [
-    "static/css/main.c1915e71.css",
-    "static/js/main.921b7004.js"
+    "static/css/main.5f308dfa.css",
+    "static/js/main.0a134430.js"
   ]
 }
