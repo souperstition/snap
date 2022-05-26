@@ -21,7 +21,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/react-and-sassbased-solution-snap-Mfy1VyugUu](https://www.frontendmentor.io/solutions/react-and-sassbased-solution-snap-Mfy1VyugUu)
 - Live Site URL: [https://souperstition.github.io/snap/](https://souperstition.github.io/snap/)
 ---
 ## My process
