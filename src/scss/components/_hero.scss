@@ -10,7 +10,7 @@ main {
 	}
 
 	h1 {
-		@include weight700(calc(4rem + 0.5vw), $offblack);
+		@include weight700(clamp(2.5rem, 0.75rem + 5vw, 5rem), $offblack);
 		line-height: 1em;
 	}
 
@@ -34,7 +34,7 @@ main {
 		}
 	}
 
-	.hero-desktop {
+	.hero-image {
 		max-height: 70vh;
 		width: auto;
 		max-width: 40vw;
@@ -48,19 +48,39 @@ main {
 			width: 50%;
 			margin: 0 2vw;
 		}
-
-		h1 {
-			font-size: 3.5rem;
-		}
 	}
 
 	@include respond(medium) {
-		h1 {
-			font-size: 3rem;
+		.hero-content {
+			gap: 2rem;
+		}
+	}
+
+	@include respond(x-small) {
+		flex-direction: column;
+		> * {
+			width: 100%;
+			margin: 0;
+		}
+		padding: 0;
+
+		.hero-image {
+			max-height: unset;
+			max-width: unset;
+			width: 100%;
+			margin: 0;
 		}
 
 		.hero-content {
-			gap: 2rem;
+			order: 2;
+			text-align: center;
+			p,
+			h1 {
+				width: 100%;
+			}
+			button {
+				margin: 0 auto;
+			}
 		}
 	}
 }

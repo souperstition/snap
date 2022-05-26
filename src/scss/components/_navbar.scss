@@ -7,7 +7,8 @@ nav {
 
 	.logo {
 		margin-right: 2rem;
-		align-self: center;
+		margin-bottom: 0.25rem;
+		align-self: flex-end;
 
 		path {
 			@include transition;
@@ -29,6 +30,7 @@ nav {
 		}
 		li {
 			position: relative;
+			height: 1.5rem;
 		}
 
 		-webkit-user-select: none;
@@ -48,7 +50,7 @@ nav {
 		button {
 			@include button(transparent, transparent);
 			@include weight700(14px, $ltgray);
-			margin: 0 0.25rem;
+			margin: 1rem 0.25rem 0;
 		}
 		button:hover {
 			@include hover(transparent, transparent, $offblack);
@@ -59,6 +61,53 @@ nav {
 		}
 		.register:hover {
 			@include hover(transparent, $offblack, $offblack);
+		}
+	}
+
+	@include respond(medium) {
+		padding: 1rem;
+		.logo {
+			margin-right: 1rem;
+			margin-bottom: 0;
+			align-self: center;
+		}
+		ul {
+			gap: 1.5rem;
+		}
+		.arrow {
+			margin-left: 0.25rem;
+		}
+
+		.users {
+			button {
+				margin: 0;
+				padding: 0.5rem 1rem;
+			}
+		}
+	}
+
+	@include respond(small) {
+		padding: 0.75rem;
+		.logo {
+			margin-right: 1rem;
+		}
+		ul {
+			gap: 1.25rem;
+		}
+
+		.users {
+			button {
+				padding: 0.5rem;
+			}
+		}
+	}
+
+	@include respond(x-small) {
+		justify-content: space-between;
+
+		ul,
+		.users {
+			display: none;
 		}
 	}
 }

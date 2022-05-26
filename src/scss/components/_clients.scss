@@ -21,4 +21,12 @@
 			fill: $offblack;
 		}
 	}
+
+	@include respond(x-small) {
+		margin: auto;
+		padding-bottom: 2rem;
+		.clients-svg {
+			width: calc(100vw / 4);
+		}
+	}
 }

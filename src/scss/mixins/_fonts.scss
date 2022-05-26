@@ -17,7 +17,7 @@
 
 @mixin ul {
 	list-style-type: none;
-	@include flex(row, center, center, 2rem);
+	@include flex(row, flex-start, baseline, 2rem);
 
 	li {
 		@include weight700(14px, $ltgray);

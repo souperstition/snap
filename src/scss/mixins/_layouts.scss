@@ -22,13 +22,13 @@
 	}
 
 	@if $breakpoint == small {
-		@media only screen and (max-width: 760px) {
+		@media only screen and (max-width: 750px) {
 			@content;
 		}
 	}
 
 	@if $breakpoint == x-small {
-		@media only screen and (max-width: 500px) {
+		@media only screen and (max-width: 650px) {
 			@content;
 		}
 	}

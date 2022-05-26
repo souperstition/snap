@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { ReactComponent as Logo } from '../images/logo.svg';
 import { ReactComponent as UpArrow } from '../images/icon-arrow-up.svg';
 import { ReactComponent as DownArrow } from '../images/icon-arrow-down.svg';
+import { ReactComponent as MenuOpen } from '../images/icon-menu.svg';
 import Features from './Features';
 import React from 'react';
 import Company from './Company';
+import Media from 'react-media';
 
 const Navbar = () => {
 	const [ featuresIsOpen, setFeaturesIsOpen ] = useState(false);
@@ -41,6 +43,7 @@ const Navbar = () => {
 	return (
 		<nav>
 			<Logo className="logo" />
+			<Media queries={{ mobile: '(max-width: 650px)' }}>{matches => matches.mobile && <MenuOpen />}</Media>
 			<ul>
 				<li className="features" onClick={handleFeaturesClick}>
 					Features {featuresIsOpen ? <UpArrow /> : <DownArrow />}
