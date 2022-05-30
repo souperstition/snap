@@ -63,7 +63,7 @@ const Navbar = () => {
 			</Media>
 			<Media queries={{ mobile: '(max-width: 750px)' }}>
 				{matches => (
-					<section className={matches.mobile ? menuToggle : 'nav-links'}>
+					<div className={matches.mobile ? menuToggle : 'nav-links'}>
 						<ul>
 							<li className="features" onClick={handleFeaturesClick}>
 								Features {featuresIsOpen ? <UpArrow /> : <DownArrow />}
@@ -80,7 +80,7 @@ const Navbar = () => {
 							<button>Login</button>
 							<button className="register">Register</button>
 						</div>
-					</section>
+					</div>
 				)}
 			</Media>
 		</nav>
