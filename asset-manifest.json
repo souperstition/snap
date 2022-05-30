@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/snap/static/css/main.28b86c7a.css",
-    "main.js": "/snap/static/js/main.c4f31412.js",
+    "main.js": "/snap/static/js/main.8397c4b6.js",
     "static/media/image-hero-desktop.png": "/snap/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
     "static/media/image-hero-mobile.png": "/snap/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
     "static/media/client-databiz.svg": "/snap/static/media/client-databiz.f0b1eef634066ba977a6196ec1c9e56f.svg",
@@ -16,13 +16,13 @@
     "static/media/icon-todo.svg": "/snap/static/media/icon-todo.cf52b8a4b3d68b7be8a5.svg",
     "static/media/icon-close-menu.svg": "/snap/static/media/icon-close-menu.4143712c6a760436263608690141888e.svg",
     "static/media/icon-menu.svg": "/snap/static/media/icon-menu.109447fa5fb2b0ad9073d58d95e865a7.svg",
-    "static/media/icon-arrow-down.svg": "/snap/static/media/icon-arrow-down.e66a6105d98a304694bf678d704693c7.svg",
-    "static/media/icon-arrow-up.svg": "/snap/static/media/icon-arrow-up.a889914edf93415b50f08c8dcf77349e.svg",
+    "static/media/icon-arrow-down.svg": "/snap/static/media/icon-arrow-down.c6db3cecfc69e0745599540ccd19c213.svg",
+    "static/media/icon-arrow-up.svg": "/snap/static/media/icon-arrow-up.6d813e1dc963b5b8b40b1ca3b869e54c.svg",
     "main.28b86c7a.css.map": "/snap/static/css/main.28b86c7a.css.map",
-    "main.c4f31412.js.map": "/snap/static/js/main.c4f31412.js.map"
+    "main.8397c4b6.js.map": "/snap/static/js/main.8397c4b6.js.map"
   },
   "entrypoints": [
     "static/css/main.28b86c7a.css",
-    "static/js/main.c4f31412.js"
+    "static/js/main.8397c4b6.js"
   ]
 }
