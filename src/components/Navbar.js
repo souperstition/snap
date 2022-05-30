@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import { ReactComponent as Logo } from '../images/logo.svg';
 import { ReactComponent as UpArrow } from '../images/icon-arrow-up.svg';
 import { ReactComponent as DownArrow } from '../images/icon-arrow-down.svg';

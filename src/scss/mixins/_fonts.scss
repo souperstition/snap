@@ -1,18 +1,19 @@
 @use '../variables/' as *;
-@use './shapes' as *;
 @use './effects' as *;
 @use './layouts' as *;
 
-@mixin weight700($size, $color) {
+@mixin weight700($size: inherit, $color: inherit) {
 	font-size: $size;
 	font-weight: 700;
 	color: $color;
+	font-family: 'Epilogue';
 }
 
-@mixin weight500($size, $color) {
+@mixin weight500($size: inherit, $color: inherit) {
 	font-size: $size;
 	font-weight: 500;
 	color: $color;
+	font-family: 'Epilogue';
 }
 
 @mixin ul {
@@ -27,4 +28,13 @@
 	li:hover {
 		@include hover(transparent, transparent, $offblack);
 	}
+}
+
+@mixin button($background, $border, $size, $color) {
+	border: 2px solid $border;
+	border-radius: 0.8rem;
+	background-color: $background;
+	padding: 0.6rem 1.5rem;
+	@include weight700($size, $color);
+	@include transition(750ms);
 }

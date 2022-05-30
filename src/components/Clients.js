@@ -5,12 +5,12 @@ import { ReactComponent as Maker } from '../images/client-maker.svg';
 
 const Clients = () => {
 	return (
-		<section className="clients">
+		<div className="clients">
 			<Databiz className="clients-svg" />
 			<Audiophile className="clients-svg" />
 			<Meet className="clients-svg" />
 			<Maker className="clients-svg" />
-		</section>
+		</div>
 	);
 };
 

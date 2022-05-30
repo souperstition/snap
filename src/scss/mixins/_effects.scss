@@ -7,3 +7,15 @@
 @mixin shadow {
 	box-shadow: 0.25rem 0.25rem 3rem rgba(0, 0, 0, 0.1);
 }
+
+@mixin borders($color, $radius: 0.8rem, $size: 2px) {
+	border: $size solid $color;
+	border-radius: $radius;
+}
+
+@mixin hover($background, $border, $text) {
+	background-color: $background;
+	border-color: $border;
+	color: $text;
+	cursor: pointer;
+}

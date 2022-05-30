@@ -51,8 +51,7 @@ nav {
 		margin-left: auto;
 
 		button {
-			@include button(transparent, transparent);
-			@include weight700(14px, $ltgray);
+			@include button(transparent, transparent, 14px, $ltgray);
 			margin: 1rem 0.25rem 0;
 		}
 		button:hover {

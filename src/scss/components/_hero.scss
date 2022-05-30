@@ -25,8 +25,7 @@ main {
 		}
 
 		button {
-			@include button($offblack, $offblack);
-			@include weight700(1rem, $offwhite);
+			@include button($offblack, $offblack, 1rem, $offwhite);
 			padding: 0.85rem 1.5rem;
 		}
 		button:hover {

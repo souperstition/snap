@@ -25,7 +25,7 @@ const Hero = () => {
 					mobile: '(max-width: 750px)'
 				}}
 			>
-				{matches => <img className="hero-image" src={matches.mobile ? heroMobile : heroDesktop} alt="hero" />}
+				{matches => <img className="hero-image" src={matches.mobile ? heroMobile : heroDesktop} alt="" />}
 			</Media>
 		</main>
 	);
