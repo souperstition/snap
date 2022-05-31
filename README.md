@@ -2,8 +2,6 @@
 
 ---
 
-This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -49,3 +47,6 @@ Style/Design choices I made outside the scope of the guidelines:
 
 - Website - [Danielle Lyle](https://itsdani.me)
 - Frontend Mentor - [@souperstition](https://www.frontendmentor.io/profile/souperstition)
+
+This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). 
+
