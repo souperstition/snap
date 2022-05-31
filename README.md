@@ -1,6 +1,6 @@
 # React and Sass Solution (snap)
 
----
+
 
 ## Table of contents
 
