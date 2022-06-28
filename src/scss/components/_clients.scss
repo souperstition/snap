@@ -21,7 +21,7 @@
 			fill: $offblack;
 		}
 	}
-	@include respond(small) {
+	@include respond(medium) {
 		gap: 1rem;
 		width: 90%;
 		.clients-svg {
@@ -29,7 +29,7 @@
 		}
 	}
 
-	@include respond(x-small) {
+	@include respond(small) {
 		margin: auto;
 		gap: 2rem;
 		padding-bottom: 1.5rem;

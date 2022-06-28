@@ -80,7 +80,7 @@ nav {
 		}
 	}
 
-	@include respond(medium) {
+	@include respond(large) {
 		padding: 1rem;
 		.logo {
 			margin-right: 1rem;
@@ -102,7 +102,7 @@ nav {
 		}
 	}
 
-	@include respond(small) {
+	@include respond(medium) {
 		padding: 0.75rem;
 		.logo {
 			margin-right: 1rem;
@@ -118,7 +118,7 @@ nav {
 		}
 	}
 
-	@include respond(x-small) {
+	@include respond(small) {
 		justify-content: space-between;
 
 		.menu {

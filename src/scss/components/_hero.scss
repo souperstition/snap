@@ -56,7 +56,7 @@ main {
 		}
 	}
 
-	@include respond(x-small) {
+	@include respond(small) {
 		flex-direction: column;
 		> * {
 			width: 100%;
