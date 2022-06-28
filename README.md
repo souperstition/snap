@@ -2,21 +2,24 @@
 
 ![](./src/images/screenshot.png)
 
-## Table of contents
+## Table of contents 
 
 - [Built with](#built-with)
 - [Purpose](#purpose)
 - [Project Setup](#project-setup)
 - [Media Queries](#media-queries)
+- [React Media](#react-media)
+- [Style/Design Choices](#styledesign-choices)
 
-## Built with
+## Built with 
 
 - React
   - [react-media for conditional rendering based on screen size](https://www.npmjs.com/package/react-media)
 - SCSS
 
-## Purpose
+[[back to top]](#table-of-contents)
 
+## Purpose 
 I began working on this project with two goals:
 
 ### Be able to quickly setup and complete a React project
@@ -27,7 +30,9 @@ This was one of the first React projects I ever completed, so [thinking in react
 
 I already had a comfortable grasp on CSS, and a good understanding of how SCSS works. I wanted to dive deeper into my understanding of why SCSS is so popular with developers - reusability. This project was a great opportunity to practice this skill.
 
-## Project Setup
+[[back to top]](#table-of-contents)
+
+## Project Setup 
 
 Working with SCSS in React is lovely, because you don't need to worry about compiling CSS or watching SCSS files. All you need to do is install it in your React project:
 
@@ -41,7 +46,9 @@ Then include the SCSS file as you normally would for any CSS stylesheet:
 import './scss/index.scss';
 ~~~
 
-## Media Queries
+[[back to top]](#table-of-contents)
+
+## Media Queries 
 
 The biggest challenge here was making sure the design looked great on any screen size. I settled on three breakpoints at which I felt the layout needed an adjustment:
 
@@ -108,7 +115,9 @@ Here's how easy it was in practice:
 }
 ~~~
 
-## React Media
+[[back to top]](#table-of-contents)
+
+## React Media 
 
 Media queries were sufficient for almost all layout resizing, but the main hero section image was a unique situation. For small screen sizes, there was an entirely different image, so I needed to be able to render the appropriate image accordingly. To do this, I installed the react-media package:
 
@@ -125,7 +134,9 @@ import Media from 'react-media';
 {matches => <img className="hero-image" src={matches.mobile ? heroMobile : heroDesktop} alt="" />}
 ~~~
 
-## Style/Design Choices
+[[back to top]](#table-of-contents)
+
+## Style/Design Choices 
 
 These were choices I made outside the scope of the project's guidelines: 
 
