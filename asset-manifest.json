@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/snap/static/css/main.28b86c7a.css",
+    "main.css": "/snap/static/css/main.1dc25c23.css",
     "main.js": "/snap/static/js/main.107370ce.js",
     "static/media/image-hero-desktop.png": "/snap/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
     "static/media/image-hero-mobile.png": "/snap/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
@@ -18,11 +18,11 @@
     "static/media/icon-menu.svg": "/snap/static/media/icon-menu.109447fa5fb2b0ad9073d58d95e865a7.svg",
     "static/media/icon-arrow-down.svg": "/snap/static/media/icon-arrow-down.c6db3cecfc69e0745599540ccd19c213.svg",
     "static/media/icon-arrow-up.svg": "/snap/static/media/icon-arrow-up.6d813e1dc963b5b8b40b1ca3b869e54c.svg",
-    "main.28b86c7a.css.map": "/snap/static/css/main.28b86c7a.css.map",
+    "main.1dc25c23.css.map": "/snap/static/css/main.1dc25c23.css.map",
     "main.107370ce.js.map": "/snap/static/js/main.107370ce.js.map"
   },
   "entrypoints": [
-    "static/css/main.28b86c7a.css",
+    "static/css/main.1dc25c23.css",
     "static/js/main.107370ce.js"
   ]
 }
